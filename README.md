@@ -1,11 +1,24 @@
 # README
-# This is the authentication project where a user can create an account then login and create a post 
 
-#setup
+This README would normally document whatever steps are necessary to get the
+application up and running.
 
-. clone the development branch to your local machine 
+Things you may want to cover:
 
-. run bundle update to make sure all gems 
+* Ruby version
 
+* System dependencies
 
-. Then run rails s to start the server
+* Configuration
+
+* Database creation
+
+* Database initialization
+
+* How to run the test suite
+
+* Services (job queues, cache servers, search engines, etc.)
+
+* Deployment instructions
+
+* ...

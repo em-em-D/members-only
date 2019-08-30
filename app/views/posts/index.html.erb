@@ -1,0 +1,5 @@
+<% if @posts.try(:any?) %>
+  
+  <div> <h1>    All Posts </h1></div><br>
+  <%= render 'postlist' %>
+<% end %>
