@@ -1,6 +1,6 @@
 # README
 
-#This is part of the memebers only pproject where a user can create and account and login to create post
+#This is part of the memebers only project where a user can create and account and login to create post
 #set up
 
 To start up the app you would need to clone the development branch to your local machine and run bundle install
