@@ -1,7 +1,10 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+#This is part of the memebers only project where a user can create and account and login to create post
+#set up
+
+To start up the app you would need to clone the development branch to your local machine and run bundle install
+ start by runnind rails s , and you are good to go, its simple so feel free to surf around
 
 Things you may want to cover:
 

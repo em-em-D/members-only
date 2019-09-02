@@ -1,0 +1,14 @@
+<header>
+<div class="topnav" id="myTopnav">
+ <%= link_to "Members-only", root_path, class: "active" %>
+  
+   <% if sign_in? %>
+          
+              <%= link_to "home", '#' %>
+                <%= link_to "Sign out", '/logout', method: :delete %>
+                <%= link_to "posts", '/postlist' %>
+   
+        <% end %>
+  </div>
+</div> 
+</header>

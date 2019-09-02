@@ -1,0 +1,6 @@
+<% @user ||= current_user %>
+<%= render 'header' %>
+
+<% provide(:button, "Create Event") %>
+<h1>Create Your Post!</h1>
+<%= render 'postform' %>
