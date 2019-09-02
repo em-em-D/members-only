@@ -16,16 +16,16 @@ class PostsController < ApplicationController
             redirect_to postlist_path
         else
             flash.now[:error] = "Unable to create post"
-            redirect_to '/login'
+            render '/login'
         end
     end
 
     def show
-        @post = Post.find(params[:id])
+        @post = Post.find(params_id)
     end
 
     def destroy
-        @post = Post.find(params[:id])
+        @post = Post.find(params_id)
         @post.destroy
         flash.now[:notice] = "Post has been deleted"
         redirect_to '/postboard'
@@ -35,6 +35,10 @@ class PostsController < ApplicationController
 
     def post_params
         params.require(:post).permit(:content)
+    end
+
+    def params_id
+        params.require(:post).permit(:id)
     end
 
     
