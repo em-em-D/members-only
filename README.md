@@ -1,24 +1,12 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# THIS IS PARTR OF THE MICROVERSE ODIN PROJECT WHERE A REGISTERED MEMBER(USER) CAN LOGIN INTO THERE ACCOUNT AND CREATE A POST 
+# THAT CAN ONLY BE VIEWED BY REGISTERED MEMBERS ONLY
+# SETUP
+clone repository
+using git pul, pull the from development
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+run bundle update 
+to make sure all gems are update
+run rails s to start the server 
+and surf through the  app
