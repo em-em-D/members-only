@@ -1,13 +1,13 @@
 class PostsController < ApplicationController
   # frozen_string_literal: true
-  before_action :sign_in?, only: %i[new create destroy]
+  before_action :sign_in?, only: %i[index new create destroy]
 
   def index
     @posts = Post.all
   end
 
   def new
-    @post = current_user.posts.build
+    @post = Post.new
   end
 
   def create

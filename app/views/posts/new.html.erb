@@ -1,6 +1,11 @@
-<% @user ||= current_user %>
-<%= render 'header' %>
+<% if sign_in? %>
+    <% @user ||= current_user %>
+    <%= render 'header' %>
 
-<% provide(:button, "Create Event") %>
-<h1>Create Your Post!</h1>
-<%= render 'postform' %>
+    <% provide(:button, "Create Event") %>
+    <h1>Create Your Post!</h1>
+    <%= render 'postform' %>
+
+<% else %>
+    <%= render 'sessions/login' %>
+<% end %>

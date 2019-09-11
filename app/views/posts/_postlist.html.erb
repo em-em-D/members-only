@@ -1,7 +1,9 @@
-<% if @posts.try(:any?) %>
-  <ol class="post">
-    <% current_user.posts.each do |post| %>
-      <%= post.content %><br>
+<% if sign_in? %>
+    <% if @posts.try(:any?) %>
+      <ol class="post">
+        <% current_user.posts.each do |post| %>
+          <%= post.content %><br>
+        <% end %>
+      </ol>
     <% end %>
-  </ol>
 <% end %>
