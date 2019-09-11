@@ -1,6 +1,6 @@
 module SessionsHelper
   # frozen_string_literal: true
-  
+
   def user(user)
     user.produce_token
     cookies.permanent.signed[:user_id] = user.id
